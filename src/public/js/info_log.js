@@ -1,4 +1,4 @@
-let localStorage = window.localStorage;     // 로컬 스토리지
+let conlocalStorage = window.localStorage;     // 로컬 스토리지
 
 let conProduct = document.getElementsByName("con_product");     // 콘택트렌즈 제품
 let conType = document.getElementsByName("con_type");           // 콘택트렌즈 종류
@@ -14,7 +14,7 @@ let contacts_number = "";
 let contacts_start = "";
 let contacts_end = "";
 
-// 기록 버튼 클릭 시 로컬 스토리지에 레코드 저장하기
+// 기록하기 버튼 클릭 시 로컬 스토리지에 레코드 저장하기
 function saveRecord() {
     // 콘택트렌즈 제품
     contacts_product += conProduct[0].value;
@@ -34,12 +34,12 @@ function saveRecord() {
     contacts_end += conEnd[0].value;
 
     // 레코드 저장
-    localStorage.setItem("contacts_product", contacts_product);
-    localStorage.setItem("contacts_type", contacts_type);
-    localStorage.setItem("optical_type", optical_type);
-    localStorage.setItem("contacts_number", contacts_number);
-    localStorage.setItem("contacts_start", contacts_start);
-    localStorage.setItem("contacts_end", contacts_end);
+    conlocalStorage.setItem("contacts_product", contacts_product);
+    conlocalStorage.setItem("contacts_type", contacts_type);
+    conlocalStorage.setItem("optical_type", optical_type);
+    conlocalStorage.setItem("contacts_number", contacts_number);
+    conlocalStorage.setItem("contacts_start", contacts_start);
+    conlocalStorage.setItem("contacts_end", contacts_end);
 
     alert("기록이 완료되었습니다!");
 }
@@ -58,15 +58,15 @@ let contacts_number_val;
 let contacts_start_val;
 let contacts_end_val;
 
-// 확인 버튼 클릭 시 로컬 스토리지에서 레코드 로드하기
+// 확인하기 버튼 클릭 시 로컬 스토리지에서 레코드 로드하기
 function loadRecord() {
     // 레코드 로드
-    contacts_product_val = localStorage.getItem("contacts_product");
-    contacts_type_val = localStorage.getItem("contacts_type");
-    optical_type_val = localStorage.getItem("optical_type");
-    contacts_number_val = localStorage.getItem("contacts_number");
-    contacts_start_val = localStorage.getItem("contacts_start");
-    contacts_end_val = localStorage.getItem("contacts_end");
+    contacts_product_val = conlocalStorage.getItem("contacts_product");
+    contacts_type_val = conlocalStorage.getItem("contacts_type");
+    optical_type_val = conlocalStorage.getItem("optical_type");
+    contacts_number_val = conlocalStorage.getItem("contacts_number");
+    contacts_start_val = conlocalStorage.getItem("contacts_start");
+    contacts_end_val = conlocalStorage.getItem("contacts_end");
 
     // 콘택트렌즈 제품
     conProductChk[0].value = contacts_product_val;
@@ -87,12 +87,12 @@ function loadRecord() {
 // body onload 시 로컬 스토리지에서 레코드 로드하기
 function loadPage() {
     // 레코드 로드
-    contacts_product_val = localStorage.getItem("contacts_product");
-    contacts_type_val = localStorage.getItem("contacts_type");
-    optical_type_val = localStorage.getItem("optical_type");
-    contacts_number_val = localStorage.getItem("contacts_number");
-    contacts_start_val = localStorage.getItem("contacts_start");
-    contacts_end_val = localStorage.getItem("contacts_end");
+    contacts_product_val = conlocalStorage.getItem("contacts_product");
+    contacts_type_val = conlocalStorage.getItem("contacts_type");
+    optical_type_val = conlocalStorage.getItem("optical_type");
+    contacts_number_val = conlocalStorage.getItem("contacts_number");
+    contacts_start_val = conlocalStorage.getItem("contacts_start");
+    contacts_end_val = conlocalStorage.getItem("contacts_end");
 
     // 콘택트렌즈 제품
     conProductChk[0].value = contacts_product_val;
