@@ -21,7 +21,7 @@
     <script type="text/javascript" src="../public/js/info_log.js"></script>
   </head>
 
-  <body onload="loadRecord()">
+  <body onload="loadPage()">
     <!-- 홈 화면 -->
     <div data-role="page">
       <div data-role="panel" id="signin" data-display="overlay" data-theme="b">
@@ -235,7 +235,7 @@
                   </fieldset>
                   <fieldset data-role="controlgroup">
                       <legend>콘택트렌즈 도수</legend>
-                      <input type="text" name="con_num" placeholder="ex. -2.25">
+                      <input type="range" name="con_num" value="0" min="-20" max="20" step="0.05">
                   </fieldset>
                   <fieldset data-role="controlgroup">
                       <legend>착용기간</legend>
@@ -253,27 +253,27 @@
                   <fieldset data-role="controlgroup">
                     <legend>콘택트렌즈 제품</legend>
                     <input type="text" name="con_product_chk" readonly>
-                </fieldset>
-                <fieldset data-role="controlgroup">
-                    <legend>콘택트렌즈 종류</legend>
-                    <input type="text" name="con_type_chk" readonly>
-                </fieldset>
-                <fieldset data-role="controlgroup">
-                    <legend>시력교정 종류</legend>
-                    <input type="text" name="opt_type_chk" readonly>
-                </fieldset>
-                <fieldset data-role="controlgroup">
-                    <legend>콘택트렌즈 도수</legend>
-                    <input type="text" name="con_num_chk" readonly>
-                </fieldset>
-                <fieldset data-role="controlgroup">
-                    <legend>착용기간</legend>
-                    <h6>시작</h6>
-                    <input type="date" name="con_start_chk" readonly>
-                    <h6>종료</h6>
-                    <input type="date" name="con_end_chk" readonly>
-                </fieldset>
-                <input type="button" data-role="button" value="확인하기" onclick="loadRecord()">
+                  </fieldset>
+                  <fieldset data-role="controlgroup">
+                      <legend>콘택트렌즈 종류</legend>
+                      <input type="text" name="con_type_chk" readonly>
+                  </fieldset>
+                  <fieldset data-role="controlgroup">
+                      <legend>시력교정 종류</legend>
+                      <input type="text" name="opt_type_chk" readonly>
+                  </fieldset>
+                  <fieldset data-role="controlgroup">
+                      <legend>콘택트렌즈 도수</legend>
+                      <input type="text" name="con_num_chk" readonly>
+                  </fieldset>
+                  <fieldset data-role="controlgroup">
+                      <legend>착용기간</legend>
+                      <h6>시작</h6>
+                      <input type="date" name="con_start_chk" readonly>
+                      <h6>종료</h6>
+                      <input type="date" name="con_end_chk" readonly>
+                  </fieldset>
+                  <input type="button" data-role="button" value="확인하기" onclick="loadRecord()">
               </div>
               <div id="faq">
                   <br/><br/>

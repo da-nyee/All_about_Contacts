@@ -14,7 +14,7 @@ let contacts_number = "";
 let contacts_start = "";
 let contacts_end = "";
 
-// 로컬 스토리지에 레코드 저장하기
+// 기록 버튼 클릭 시 로컬 스토리지에 레코드 저장하기
 function saveRecord() {
     // 콘택트렌즈 제품
     contacts_product += conProduct[0].value;
@@ -58,7 +58,7 @@ let contacts_number_val;
 let contacts_start_val;
 let contacts_end_val;
 
-// 로컬 스토리지에서 레코드 로드하기
+// 확인 버튼 클릭 시 로컬 스토리지에서 레코드 로드하기
 function loadRecord() {
     // 레코드 로드
     contacts_product_val = localStorage.getItem("contacts_product");
@@ -82,4 +82,28 @@ function loadRecord() {
     conEndChk[0].value = contacts_end_val;
 
     alert("확인이 완료되었습니다!");
+}
+
+// body onload 시 로컬 스토리지에서 레코드 로드하기
+function loadPage() {
+    // 레코드 로드
+    contacts_product_val = localStorage.getItem("contacts_product");
+    contacts_type_val = localStorage.getItem("contacts_type");
+    optical_type_val = localStorage.getItem("optical_type");
+    contacts_number_val = localStorage.getItem("contacts_number");
+    contacts_start_val = localStorage.getItem("contacts_start");
+    contacts_end_val = localStorage.getItem("contacts_end");
+
+    // 콘택트렌즈 제품
+    conProductChk[0].value = contacts_product_val;
+    // 콘택트렌즈 종류
+    conTypeChk[0].value = contacts_type_val;
+    // 시력교정 종류
+    optTypeChk[0].value = optical_type_val;
+    // 콘택트렌즈 도수
+    conNumChk[0].value = contacts_number_val;
+    // 착용기간 시작
+    conStartChk[0].value = contacts_start_val;
+    // 착용기간 종료
+    conEndChk[0].value = contacts_end_val;
 }
