@@ -17,31 +17,36 @@ let contacts_end = "";
 // 기록하기 버튼 클릭 시 로컬 스토리지에 레코드 저장하기
 function saveRecord() {
     // 콘택트렌즈 제품
-    contacts_product += conProduct[0].value;
+    contacts_product = conProduct[0].value;
     // 콘택트렌즈 종류
     for (let i = 0; i < conType.length; i++) {
         if (conType[i].checked) {
-            contacts_type += conType[i].value;
+            contacts_type = conType[i].value;
         }
     }
     // 시력교정 종류
-    optical_type += optType[0].value;
+    optical_type = optType[0].value;
     //콘택트렌즈 도수
-    contacts_number += conNum[0].value;
+    contacts_number = conNum[0].value;
     // 착용기간 시작
-    contacts_start += conStart[0].value;
+    contacts_start = conStart[0].value;
     // 착용기간 종료
-    contacts_end += conEnd[0].value;
+    contacts_end = conEnd[0].value;
 
-    // 레코드 저장
-    conlocalStorage.setItem("contacts_product", contacts_product);
-    conlocalStorage.setItem("contacts_type", contacts_type);
-    conlocalStorage.setItem("optical_type", optical_type);
-    conlocalStorage.setItem("contacts_number", contacts_number);
-    conlocalStorage.setItem("contacts_start", contacts_start);
-    conlocalStorage.setItem("contacts_end", contacts_end);
+    if (contacts_product == "" || contacts_type == "" || optical_type == "" || contacts_number == "" || contacts_start == "" || contacts_end == "") {
+        alert("모든 칸을 채워주세요!");
+    }
+    else {
+        // 레코드 저장
+        conlocalStorage.setItem("contacts_product", contacts_product);
+        conlocalStorage.setItem("contacts_type", contacts_type);
+        conlocalStorage.setItem("optical_type", optical_type);
+        conlocalStorage.setItem("contacts_number", contacts_number);
+        conlocalStorage.setItem("contacts_start", contacts_start);
+        conlocalStorage.setItem("contacts_end", contacts_end);
 
-    alert("기록이 완료되었습니다!");
+        alert("기록이 완료되었습니다!");
+    }
 }
 
 let conProductChk = document.getElementsByName("con_product_chk");
