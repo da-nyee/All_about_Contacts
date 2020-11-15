@@ -40,6 +40,8 @@ function saveRecord() {
     localStorage.setItem("contacts_number", contacts_number);
     localStorage.setItem("contacts_start", contacts_start);
     localStorage.setItem("contacts_end", contacts_end);
+
+    alert("기록이 완료되었습니다!");
 }
 
 let conProductChk = document.getElementsByName("con_product_chk");
@@ -78,4 +80,6 @@ function loadRecord() {
     conStartChk[0].value = contacts_start_val;
     // 착용기간 종료
     conEndChk[0].value = contacts_end_val;
+
+    alert("확인이 완료되었습니다!");
 }
