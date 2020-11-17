@@ -125,22 +125,22 @@
         <ul data-role="listview" data-filter="true" data-filter-placeholder="지역명 또는 가게명을 입력해주세요!">
           <br/>
           <li data-role="listdivider">강원</li>
-          <li><a href="#gangwon1">오렌즈 강릉점</a></li>
-          <li><a href="#gangwon2">오렌즈 속초점</a></li>
+          <li><a href="#gangwon1" data-rel="dialog">오렌즈 강릉점</a></li>
+          <li><a href="#gangwon2" data-rel="dialog">오렌즈 속초점</a></li>
           <li data-role="listdivider">경기</li>
-          <li><a href="#gyeonggi1">우리동네안경원 분당점</a></li>
-          <li><a href="#gyeonggi2">우리동네안경원 일산점</a></li>
+          <li><a href="#gyeonggi1" data-rel="dialog">우리동네안경원 분당점</a></li>
+          <li><a href="#gyeonggi2" data-rel="dialog">우리동네안경원 일산점</a></li>
           <li data-role="listdivider">경상</li>
-          <li><a href="#gyeongsang1">다비치안경 포항중앙점</a></li>
+          <li><a href="#gyeongsang1" data-rel="dialog">다비치안경 포항중앙점</a></li>
           <li data-role="listdivider">서울</li>
-          <li><a href="#seoul1">글라스스토리 마곡나루역점</a></li>
-          <li><a href="#seoul2">룩옵티컬 홍대점</a></li>
+          <li><a href="#seoul1" data-rel="dialog">글라스스토리 마곡나루역점</a></li>
+          <li><a href="#seoul2" data-rel="dialog">룩옵티컬 홍대점</a></li>
           <li data-role="listdivider">전라</li>
-          <li><a href="#jeolla1">안경나라 광주진월점</a></li>
+          <li><a href="#jeolla1" data-rel="dialog">안경나라 광주진월점</a></li>
           <li data-role="listdivider">제주</li>
-          <li><a href="#jeju1">다비치안경 제주삼화점</a></li>
+          <li><a href="#jeju1" data-rel="dialog">다비치안경 제주삼화점</a></li>
           <li data-role="listdivider">충청</li>
-          <li><a href="#chungcheong1">이안경원 은행점</a></li>
+          <li><a href="#chungcheong1" data-rel="dialog">이안경원 은행점</a></li>
         </ul>
       </div>
       <div data-role="footer" data-position="fixed" style="position: fixed;">
@@ -149,82 +149,10 @@
     </div>
 
     <!-- 근처 판매처 검색 화면: 각 리스트 상세 내용 -->
-    <div data-role="page" id="gyeonggi1">
-      <div data-role="header" style="background-color: #d8f5a2;">
-          <a href="#shop" data-role="button" data-inline="true">
-            <img src="../public/img/arrow-left-s-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
-          </a>
-          <h1 style="font-size: large;"><b>우리동네안경원 분당점</b></h1>
-      </div>
-      <div data-role="content">
-        <figure>
-          <a href="https://place.map.kakao.com/406513728">
-            <center><img src="../public/img/gyeonggi1.PNG" style="max-width: 100%; height: auto; margin-top: 5%; margin-bottom: 0.5%;"></center>
-          </a>
-          <center><figcaption style="color: gray; margin-bottom: 5%;">이미지를 클릭하면 카카오맵으로 연결됩니다!</figcaption></center>
-        </figure>
-        <div class="ui-body ui-body-a">
-          <h4><b>우리동네안경원 분당점</b></h4>
-          <p style="margin-top: 1.5%;">
-            <div style="margin-bottom: 1%;">
-              <img src="../public/img/map-pin-2-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
-              &nbsp;경기 성남시 분당구 중앙공원로39번길 49 117호
-            </div>
-            <div style="margin-bottom: 1%;">
-              <img src="../public/img/global-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
-              &nbsp;<a href="https://pf.kakao.com/_PKaFj">공식 채널</a>
-            </div>
-            <div>
-              <img src="../public/img/phone-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
-              &nbsp;070-4143-1002
-            </div>
-          </p>
-        </div>
-      </div>
-      <div data-role="footer" data-position="fixed" style="position: fixed;">
-        <h4>201632230 컴퓨터공학과 이다은</h4>
-      </div>
-    </div>
-    <div data-role="page" id="gyeonggi2">
-      <div data-role="header" style="background-color: #d8f5a2;">
-          <a href="#shop" data-role="button" data-inline="true">
-            <img src="../public/img/arrow-left-s-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
-          </a>
-          <h1 style="font-size: large;"><b>우리동네안경원 일산점</b></h1>
-      </div>
-      <div data-role="content">
-        <figure>
-          <a href="https://place.map.kakao.com/1763378087">
-            <center><img src="../public/img/gyeonggi2.PNG" style="max-width: 100%; height: auto; margin-top: 5%; margin-bottom: 0.5%;"></center>
-          </a>
-          <center><figcaption style="color: gray; margin-bottom: 5%;">이미지를 클릭하면 카카오맵으로 연결됩니다!</figcaption></center>
-        </figure>
-        <div class="ui-body ui-body-a">
-          <h4><b>우리동네안경원 일산점</b></h4>
-          <p style="margin-top: 1.5%;">
-            <div style="margin-bottom: 1%;">
-              <img src="../public/img/map-pin-2-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
-              &nbsp;경기 고양시 일산동구 정발산로 43-20 2층
-            </div>
-            <div style="margin-bottom: 1%;">
-              <img src="../public/img/global-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
-              &nbsp;<a href="https://blog.naver.com/okoptic">공식 채널</a>
-            </div>
-            <div>
-              <img src="../public/img/phone-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
-              &nbsp;031-902-1932
-            </div>
-          </p>
-        </div>
-      </div>
-      <div data-role="footer" data-position="fixed" style="position: fixed;">
-        <h4>201632230 컴퓨터공학과 이다은</h4>
-      </div>
-    </div>
     <div data-role="page" id="gangwon1">
       <div data-role="header" style="background-color: #d8f5a2;">
           <a href="#shop" data-role="button" data-inline="true">
-            <img src="../public/img/arrow-left-s-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
+            <img src="../public/img/close-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
           </a>
           <h1 style="font-size: large;"><b>오렌즈 강릉점</b></h1>
       </div>
@@ -260,7 +188,7 @@
     <div data-role="page" id="gangwon2">
       <div data-role="header" style="background-color: #d8f5a2;">
           <a href="#shop" data-role="button" data-inline="true">
-            <img src="../public/img/arrow-left-s-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
+            <img src="../public/img/close-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
           </a>
           <h1 style="font-size: large;"><b>오렌즈 속초점</b></h1>
       </div>
@@ -293,10 +221,82 @@
         <h4>201632230 컴퓨터공학과 이다은</h4>
       </div>
     </div>
+    <div data-role="page" id="gyeonggi1">
+      <div data-role="header" style="background-color: #d8f5a2;">
+          <a href="#shop" data-role="button" data-inline="true">
+            <img src="../public/img/close-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
+          </a>
+          <h1 style="font-size: large;"><b>우리동네안경원 분당점</b></h1>
+      </div>
+      <div data-role="content">
+        <figure>
+          <a href="https://place.map.kakao.com/406513728">
+            <center><img src="../public/img/gyeonggi1.PNG" style="max-width: 100%; height: auto; margin-top: 5%; margin-bottom: 0.5%;"></center>
+          </a>
+          <center><figcaption style="color: gray; margin-bottom: 5%;">이미지를 클릭하면 카카오맵으로 연결됩니다!</figcaption></center>
+        </figure>
+        <div class="ui-body ui-body-a">
+          <h4><b>우리동네안경원 분당점</b></h4>
+          <p style="margin-top: 1.5%;">
+            <div style="margin-bottom: 1%;">
+              <img src="../public/img/map-pin-2-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
+              &nbsp;경기 성남시 분당구 중앙공원로39번길 49 117호
+            </div>
+            <div style="margin-bottom: 1%;">
+              <img src="../public/img/global-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
+              &nbsp;<a href="https://pf.kakao.com/_PKaFj">공식 채널</a>
+            </div>
+            <div>
+              <img src="../public/img/phone-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
+              &nbsp;070-4143-1002
+            </div>
+          </p>
+        </div>
+      </div>
+      <div data-role="footer" data-position="fixed" style="position: fixed;">
+        <h4>201632230 컴퓨터공학과 이다은</h4>
+      </div>
+    </div>
+    <div data-role="page" id="gyeonggi2">
+      <div data-role="header" style="background-color: #d8f5a2;">
+          <a href="#shop" data-role="button" data-inline="true">
+            <img src="../public/img/close-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
+          </a>
+          <h1 style="font-size: large;"><b>우리동네안경원 일산점</b></h1>
+      </div>
+      <div data-role="content">
+        <figure>
+          <a href="https://place.map.kakao.com/1763378087">
+            <center><img src="../public/img/gyeonggi2.PNG" style="max-width: 100%; height: auto; margin-top: 5%; margin-bottom: 0.5%;"></center>
+          </a>
+          <center><figcaption style="color: gray; margin-bottom: 5%;">이미지를 클릭하면 카카오맵으로 연결됩니다!</figcaption></center>
+        </figure>
+        <div class="ui-body ui-body-a">
+          <h4><b>우리동네안경원 일산점</b></h4>
+          <p style="margin-top: 1.5%;">
+            <div style="margin-bottom: 1%;">
+              <img src="../public/img/map-pin-2-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
+              &nbsp;경기 고양시 일산동구 정발산로 43-20 2층
+            </div>
+            <div style="margin-bottom: 1%;">
+              <img src="../public/img/global-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
+              &nbsp;<a href="https://blog.naver.com/okoptic">공식 채널</a>
+            </div>
+            <div>
+              <img src="../public/img/phone-line.png" style="width: 1.4em; height: 1.4em; margin-bottom: 0.3%;">
+              &nbsp;031-902-1932
+            </div>
+          </p>
+        </div>
+      </div>
+      <div data-role="footer" data-position="fixed" style="position: fixed;">
+        <h4>201632230 컴퓨터공학과 이다은</h4>
+      </div>
+    </div>
     <div data-role="page" id="gyeongsang1">
       <div data-role="header" style="background-color: #d8f5a2;">
           <a href="#shop" data-role="button" data-inline="true">
-            <img src="../public/img/arrow-left-s-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
+            <img src="../public/img/close-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
           </a>
           <h1 style="font-size: large;"><b>다비치안경 포항중앙점</b></h1>
       </div>
@@ -332,7 +332,7 @@
     <div data-role="page" id="seoul1">
       <div data-role="header" style="background-color: #d8f5a2;">
           <a href="#shop" data-role="button" data-inline="true">
-            <img src="../public/img/arrow-left-s-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
+            <img src="../public/img/close-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
           </a>
           <h1 style="font-size: large;"><b>글라스스토리 마곡나루역점</b></h1>
       </div>
@@ -368,7 +368,7 @@
     <div data-role="page" id="seoul2">
       <div data-role="header" style="background-color: #d8f5a2;">
           <a href="#shop" data-role="button" data-inline="true">
-            <img src="../public/img/arrow-left-s-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
+            <img src="../public/img/close-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
           </a>
           <h1 style="font-size: large;"><b>룩옵티컬 홍대점</b></h1>
       </div>
@@ -404,7 +404,7 @@
     <div data-role="page" id="jeolla1">
       <div data-role="header" style="background-color: #d8f5a2;">
           <a href="#shop" data-role="button" data-inline="true">
-            <img src="../public/img/arrow-left-s-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
+            <img src="../public/img/close-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
           </a>
           <h1 style="font-size: large;"><b>안경나라 광주진월점</b></h1>
       </div>
@@ -440,7 +440,7 @@
     <div data-role="page" id="jeju1">
       <div data-role="header" style="background-color: #d8f5a2;">
           <a href="#shop" data-role="button" data-inline="true">
-            <img src="../public/img/arrow-left-s-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
+            <img src="../public/img/close-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
           </a>
           <h1 style="font-size: large;"><b>다비치안경 제주삼화점</b></h1>
       </div>
@@ -476,7 +476,7 @@
     <div data-role="page" id="chungcheong1">
       <div data-role="header" style="background-color: #d8f5a2;">
           <a href="#shop" data-role="button" data-inline="true">
-            <img src="../public/img/arrow-left-s-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
+            <img src="../public/img/close-line.png" alt="이전" style="width: 1.3em; height: 1.3em;">
           </a>
           <h1 style="font-size: large;"><b>이안경원 은행점</b></h1>
       </div>
