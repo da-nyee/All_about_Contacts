@@ -9,3 +9,6 @@
 
 ### Developer
 - https://github.com/da-nyee (Daeun Lee, 이다은)
+
+### License
+This work is published under [MIT](https://github.com/da-nyee/all_about_contacts/blob/master/LICENSE) License.
